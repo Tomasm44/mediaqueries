@@ -1,0 +1,166 @@
+body {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto;
+}
+
+@media (min-width: 576px) {
+    .body-desktop {
+      display: grid;
+      grid-template-columns: 14% auto;
+      grid-row: auto auto auto;
+      grid-template-areas: 
+      "nav main"
+      "nav section"
+      "footer section";
+    }
+
+        /* grid areas */
+    nav {
+        grid-area: nav;
+    }
+
+    main {
+        grid-area: main;
+    }
+
+    section {
+        grid-area: section;
+    }
+
+    footer {
+        grid-area: footer;
+    }
+    /* grid areas */
+}
+
+@media (min-width: 576px) {
+    .card-desktop {
+      display: grid;
+      grid-template-areas: 
+      "card-car-1 card-car-2 card-car-3 card-car-4"
+      "card-car-5 card-car-6 card-car-7 card-car-8";
+      
+    }
+
+        /* grid areas */
+        .card-car-1 {
+            grid-area: card-car-1;
+        }
+    
+        .card-car-2 {
+            grid-area: card-car-2;
+        }
+    
+        .card-car-3 {
+            grid-area: card-car-3;
+        }
+    
+        .card-car-4 {
+            grid-area: card-car-4;
+        }
+
+        .card-car-5 {
+            grid-area: card-car-5;
+        }
+
+        .card-car-6 {
+            grid-area: card-car-6;
+        }
+
+        .card-car-7 {
+            grid-area: card-car-7;
+        }
+
+        .card-car-8 {
+            grid-area: card-car-8;
+        }
+        /* grid areas */
+}
+
+@media (min-width: 576px) {
+    .nav-car {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+    }
+}
+
+@media (min-width: 576px) {
+    footer {
+      display: flex;
+      justify-content: center;
+    }
+}
+
+@media (min-width: 576px) {
+    .img-card {
+        width: 5em;
+    }
+}
+
+/* @media (min-width: 576px) {
+    .article-car {
+      width: auto;
+        
+    }
+} */
+
+.card-car-1, .card-car-2, .card-car-3, .card-car-4,
+.card-car-5, .card-car-6, .card-car-7, .card-car-8 {
+    margin: 5px;
+}
+
+/* css navbar */
+.nav-car {
+    background-color: #4B7CCC;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+    /* border: 2px solid red; */
+
+}
+
+/* css filtro */
+
+.article-car {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid red; 
+}
+ 
+.card-desktop-n {
+    display: flex;
+    justify-content: center;
+}
+
+/* css card */
+.card-car-1, .card-car-2, .card-car-3, .card-car-4,
+.card-car-5, .card-car-6, .card-car-7, .card-car-8 {
+    background-color: bisque;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid purple;
+    padding: 20px;
+    width: 15em;
+}
+
+.img-card {
+    width: 15em;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 20px;
+    background-color: #223A5E;
+    /* border: 2px solid red; */
+}
+
+
+
+
