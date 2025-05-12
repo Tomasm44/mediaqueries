@@ -1,3 +1,4 @@
+
 body {
     display: grid;
     grid-template-columns: auto;
@@ -7,7 +8,7 @@ body {
 @media (min-width: 576px) {
     .body-desktop {
       display: grid;
-      grid-template-columns: 14% auto;
+      grid-template-columns: 18% auto;
       grid-row: auto auto auto;
       grid-template-areas: 
       "nav main"
@@ -112,24 +113,65 @@ body {
 }
 
 /* css navbar */
+
 .nav-car {
     background-color: #4B7CCC;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     padding: 20px;
-    /* border: 2px solid red; */
-
 }
+
+.nav-car-1 {
+    display: flex;
+    gap: 10px;
+}
+
+.nav-car-1 h1 {
+    color: white;
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.nav-car-2, .nav-car-1 span {
+    font-size: 1.8rem;
+    color: white;
+    cursor: pointer;
+}
+
+.nav-car-2 select {
+    margin-left: 1em;
+    padding: 0.2rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+  }
+ 
+
 
 /* css filtro */
 
-.article-car {
+.filter-container {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    border: 2px solid red; 
-}
+    gap: 10px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    background-color: #BFBBB4;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .filter-container label {
+    font-weight: bold;
+  }
+  
+  .filter-container select {
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+  }
  
 .card-desktop-n {
     display: flex;
@@ -152,15 +194,37 @@ body {
     width: 15em;
 }
 
-footer {
+.card-car-1, .card-car-2, .card-car-3, .card-car-4,
+.card-car-5, .card-car-6, .card-car-7, .card-car-8 {
+    position: relative;
+    z-index: 1;
+    background-color: white;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 2);
+    transform: translateY(-5px);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    border-radius: 10px;
+  }
+  
+  /* Opcional: efecto al pasar el mouse */
+  .card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 1);
+  }
+  
+
+
+  footer {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     padding: 20px;
     background-color: #223A5E;
-    /* border: 2px solid red; */
 }
 
-
-
+footer p {
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 0.9rem;
+}
 

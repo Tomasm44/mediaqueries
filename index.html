@@ -16,14 +16,24 @@
                     <h1>Electric Car</h1>
                 </div>
                 <div class="nav-car-2">
-                    <span class="mdi mdi-menu"></span>
+                    <select id="filtro" name="filtro">
+                        <option value="Marca"><span class="mdi mdi-menu">Inicio</span></option>
+                        <option value="Modelo">Catálogo</option>
+                        <option value="Año">Ofertas</option>
+                        <option value="Año">Contacto</option>
+                    </select>
                 </div>
             </div>
         </nav>
+        
         <main>
-            <div class="article-car">
-                <h2>Ordenar por</h2>
-                <button>precio</button>
+            <div class="filter-container">
+                <label for="filtro">Ordenar por:</label>
+                <select id="filtro" name="filtro">
+                    <option value="Marca">Marca</option>
+                    <option value="Modelo">Modelo</option>
+                    <option value="Año">Año</option>
+                </select>
             </div>
         </main>
         <section>
@@ -73,8 +83,11 @@
             </div>
         </section>
         <footer>
-            <span class="mdi mdi-facebook"></span>
-            <span class="mdi mdi-instagram"></span>
+            <div>
+                <span class="mdi mdi-facebook"></span>
+                <span class="mdi mdi-instagram"></span>
+            </div>
+            <p>&copy; 2025 Tu Nombre. Todos los derechos reservados.</p>
         </footer>
     </div>
 </body>
